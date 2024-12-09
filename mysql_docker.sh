@@ -12,6 +12,10 @@ mkdir -p "$LOG_DIR"
 read -sp "MySQL root 비밀번호를 입력하세요: " MYSQL_ROOT_PASSWORD
 echo
 
+# 3306 포트를 ufw 방화벽에서 허용
+echo "MySQL 포트 3306을 방화벽에서 허용 중..."
+sudo ufw allow 3306/tcp
+
 # MySQL Docker 컨테이너 실행
 docker run --name mysql-container -e MYSQL_ROOT_PASSWORD="$MYSQL_ROOT_PASSWORD" -p 3306:3306 \
   -v /home/master/mysql/my.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf \
