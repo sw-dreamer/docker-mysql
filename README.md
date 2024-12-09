@@ -70,7 +70,8 @@ MySQL Docker 컨테이너를 실행하려면, 위에 제공된 mysql_docker.sh �
 컨테이너 실행 중 발생하는 모든 로그는 /home/master/docker_mysql_log/docker_mysql_YYYYMMDD_HHMMSS.log 형식으로 생성됩니다. 이 파일에는 MySQL 컨테이너의 시작과 관련된 모든 출력이 기록됩니다.
 
 ## 방화벽 설정
-스크립트는 ufw 방화벽에서 3306 포트를 허용하는 명령을 자동으로 실행합니다. 이를 통해 외부에서 MySQL 서버에 접속할 수 있도록 설정됩니다.
+스크립트는 ufw 방화벽에서 3306 포트를 허용하는 명령을 자동으로 실행합니다.
+이를 통해 외부에서 MySQL 서버에 접속할 수 있도록 설정됩니다.
 
 ## 참고
 - mysql_docker.sh 스크립트는 실행 시 MySQL root 비밀번호를 묻습니다. 비밀번호를 안전하게 입력해야 합니다.
