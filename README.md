@@ -7,19 +7,21 @@
 ## 프로젝트 파일
 
 1. MySQL Docker 실행 스크립트(mysql_docker.sh)
+   
    이 스크립트는 MySQL Docker 컨테이너를 실행하며, 로그 파일을 생성하여 실행 결과를 기록합니다.
    - MySQL root 비밀번호 입력 받기
    - 3306 포트를 ufw 방화벽에서 허용
    - Docker에서 MySQL 컨테이너 실행
    스크립트의 실행 결과는 /home/master/docker_mysql_log 디렉토리 내에 시간별로 생성된 로그 파일에 기록됩니다.
   
-사용방법
-```
-bash
-./mysql_docker.sh
-```
+   사용방법
+   ```
+   bash
+   ./mysql_docker.sh
+   ```
 
 2. MySQL 설정 파일 (my.cnf)
+   
    이 파일은 MySQL 서버의 기본 설정을 정의합니다.
    MySQL 서버의 포트, 데이터 디렉토리, 소켓 경로, 기본 인증 플러그인 등의 설정을 포함하고 있습니다.
    해당 설정은 MySQL Docker 컨테이너에 마운트하여 사용됩니다.
@@ -32,7 +34,8 @@ bash
    - sql_mode: SQL 모드 설정, STRICT_TRANS_TABLES와 같은 옵션 포함
    - default_authentication_plugin: mysql_native_password로 설정하여 호환성 확보
 
-4. MySQL 컨테이너 설정 파일 (mysqld.cnf)
+3. MySQL 컨테이너 설정 파일 (mysqld.cnf)
+   
    mysqld.cnf 파일은 MySQL 서버의 상세 설정을 포함합니다.
    Docker 컨테이너 내에서 MySQL 설정을 변경하는 데 사용됩니다.
    이 파일은 Docker 컨테이너 내의 /etc/mysql/mysql.conf.d/mysqld.cnf 경로에 마운트됩니다.
