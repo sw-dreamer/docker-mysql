@@ -22,7 +22,8 @@
    ./mysql_docker.sh
    ```
 
-3. MySQL 설정 파일 (my.cnf)
+
+2. MySQL 설정 파일 (my.cnf)
    
    이 파일은 MySQL 서버의 기본 설정을 정의합니다.
    
@@ -40,7 +41,9 @@
    - sql_mode: SQL 모드 설정, STRICT_TRANS_TABLES와 같은 옵션 포함
    - default_authentication_plugin: mysql_native_password로 설정하여 호환성 확보
 
-5. MySQL 컨테이너 설정 파일 (mysqld.cnf)
+
+
+3. MySQL 컨테이너 설정 파일 (mysqld.cnf)
    
    mysqld.cnf 파일은 MySQL 서버의 상세 설정을 포함합니다.
    
