@@ -1,4 +1,4 @@
-# Ubuntu용 MySQL Docker Setup
+# Ubuntu용 MySQL Docker Setup (VMWare)
 
 이 프로젝트는 Docker를 사용하여 MySQL 서버를 설정하고 실행하는 방법을 설명합니다.
 사전에 Ubuntu에 Docker가 설치 되어야 합니다. Docker 설치 하는 방법은 [docker 설치](https://github.com/sw-dreamer/docker.git)에 표시되어있습니다.
